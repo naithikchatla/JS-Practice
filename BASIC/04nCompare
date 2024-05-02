@@ -1,0 +1,22 @@
+// console.log(2 > 1);
+// console.log(2 >= 1);
+// console.log(2 < 1);
+// console.log(2 == 1);
+// console.log(2 != 1);
+
+// console.log("2" > 1); true
+// console.log("02" > 1); true
+
+// console.log(null > 0); // false
+// console.log(null == 0); //false
+// console.log(null >= 0); //true
+
+//comparison act differently sometime like it used to convert null to a number and treat as a 0.
+
+// console.log(undefined == 0); //false
+// console.log(undefined > 0); //false
+// console.log(undefined < 0);//false
+
+// === this checks the data type of values and == only check the values.
+
+ console.log("2" === 2);
