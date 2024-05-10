@@ -1,0 +1,37 @@
+const name = "hitesh"
+const repoCount = 50
+
+// console.log(name + repoCount + " Value"); old way of decalring not recommanded (oldCode)
+
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+
+const gameName = new String('naithik-rp-rsc')
+//browser-inspect write this above over there and then 'gameName' down the line to get output 
+//there you can see string object like of array but not array
+
+// console.log(gameName[0]); o/p: h
+// console.log(gameName.__proto__); o/p: {}
+
+
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('t'));
+
+const newString = gameName.substring(0, 4) 
+// cant give range in negative if given then it will behave normal only
+console.log(newString);
+
+const anotherString = gameName.slice(-8, 4)
+console.log(anotherString); // o/p: hik (it will work from backword)
+
+const newStringOne = "   Naithik    "
+console.log(newStringOne); // this will give o/p with spaces
+console.log(newStringOne.trim());// this will give o/p by trimming the spaces
+
+const url = "https://hitesh.com/hitesh%20choudhary"
+console.log(url.replace('%20', '-')) 
+
+console.log(url.includes('sundar'))//false
+
+console.log(gameName.split('-'));//['naithik', 'rp', 'rsc']
