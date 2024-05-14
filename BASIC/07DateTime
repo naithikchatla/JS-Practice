@@ -1,0 +1,35 @@
+// Dates
+
+let myDate = new Date()
+ //console.log(myDate);//o/p: 2024-05-14T06:30:31.723Z
+ //console.log(myDate.toString()); //readable//o/p: Tue May 14 2024 06:30:31 GMT+0000 (Coordinated Universal Time)
+ //console.log(myDate.toDateString());//o/p:Tue May 14 2024
+ //console.log(myDate.toLocaleString());//o/p: 5/14/2024, 6:30:31 AM
+ //console.log(typeof myDate);//o/p:object
+
+//  let myCreatedDate = new Date(2023, 0, 23)//o/p: Mon Jan 23 2023
+// let myCreatedDate = new Date(2023, 0, 23, 5, 3)//o/p:1/23/2023, 5:03:00 AM
+// let myCreatedDate = new Date("2023-01-14")//o/p: 1/14/2023, 12:00:00 AM
+let myCreatedDate = new Date("01-14-2023")//o/p: 1/14/2023, 12:00:00 AM
+//  console.log(myCreatedDate.toDateString());
+// console.log(myCreatedDate.toLocaleString());
+
+
+let myTimeStamp = Date.now()
+// console.log(myTimeStamp);//o/p: 1715669686202(millisecond)
+// console.log(myCreatedDate.getTime());//o/p: 1673654400000(milliseconds)
+console.log(Math.floor(Date.now()/1000));//before using Math.floor you will get decimal value
+//o/p: 16736544 (seconds)
+
+let newDate = new Date()
+// console.log(newDate);
+// console.log(newDate.getMonth());
+// console.log(newDate.getMonth() + 1);
+// console.log(newDate.getDay());
+
+// `${newDate.getDay()} and the time `
+
+newDate.toLocaleString('default', {
+    weekday: "long",
+    
+})
